@@ -1,0 +1,25 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: Webserver
+  namespace: pineapple
+  labels:
+    app: todo
+    tier: frontend
+spec:
+  containers:
+    - name: banana-boat
+      image: nginx
+---
+kind: Pod
+apiVersion: v1
+metadata:
+  name: antherpod
+  namespace: pineapple
+  labels:
+    app: todo
+    tier: frontend
+spec:
+  containers:
+    - name: antherpod-cont
+      image: nginx
